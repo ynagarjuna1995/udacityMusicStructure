@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.ynagarjuna1995.udacitymusic.HomeScreen.HomeScreenActivity">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <android.support.v7.widget.CardView
+       android:layout_margin="@dimen/layoutmargin_cards"
+        android:id="@+id/artist_playlist_card"
+        android:elevation="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/artist_homeScreen_card"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_weight="@string/homeScreenWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/artist"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/homeScreenWeight"
+                android:gravity="center"
+                android:textSize="@dimen/Screens_textSize"
+                android:text="Artist Playlist"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="@dimen/layoutmargin_cards"
+        android:layout_marginRight="@dimen/layoutmargin_cards"
+        android:id="@+id/album_playlist_card"
+        android:elevation="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artist_playlist_card">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/alibum_homeScreen_card"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_weight="@string/homeScreenWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/album"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/homeScreenWeight"
+                android:gravity="center"
+                android:textSize="@dimen/Screens_textSize"
+                android:text="Album Playlist"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="@dimen/layoutmargin_cards"
+        android:id="@+id/favMusic_playlist_card"
+        android:elevation="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_playlist_card">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/favMusic_homeScreen_card"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:layout_weight="@string/homeScreenWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/favmusic"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="@string/homeScreenWeight"
+                android:gravity="center"
+                android:textSize="@dimen/Screens_textSize"
+                android:text="Favourite Playlist"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/layoutmargin_cards"
+                android:layout_marginLeft="@dimen/layoutmargin_cards"
+                android:layout_below="@id/favMusic_playlist_card">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/exp_homeScreenText"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_Size_exp_homeScreen"
+                android:text="@string/exp_homeScreen"
+                />
+     </android.support.v7.widget.CardView>
+
+    <include layout="@layout/bottom_now_playing"/>
+</RelativeLayout>

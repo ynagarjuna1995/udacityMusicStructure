@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">UdacityMusic</string>
+    <string name="exp_artistScreen">This Screen Shows the List of Artist\'s wise songs in memory card we can retrive this list from internal storage or SD Card by scanning the file extension\n Ex: .mp3 Extension\n and suing the information provided by the music api \n\nCurrently playing music in the bottom of the screen which increases user experience</string>
+    <string name="exp_favMusicScreen">This Screen Shows the List fo Favorite Songs Wise List we can save the favorite list of songs in a app dedicated sqlite/realm database and retrieve according to the user action\nUsing a Different View such as \n1.ListView\n2.RecyclerView \n and using Cursor Adpater in case of SQLite Database or Realm in built Queries in case app uses Realm Database \nCurrently playing music in the bottom of the screen which increases user experience</string>
+    <string name="exp_homeScreen">This Welcome Screen or Home Screen Contains Navigational to three different screens which are 1.Artist Playlist \n2.Album Playlist\n3.Favourite Playlist\n\nOn Pressing the top logo icon on any screen it will bring to homescreen that is the present screen.\n Bottom of the Layout Show the last/current paying music and contorl to shuffle the music play stream.</string>
+    <string name="exp_sonDetailScreen">This Screen Show the Presently playing song deatils and has controls like stop,play,playing back song,front song</string>
+    <string name="exp_albumScreen">This Screen Shows the List fo Albums and Currently playing music in the bottom of the screen which increases user experience</string>
+    <string name="homeScreenWeight">0.5</string>
+    <string name="songDetailActivity_tile">Movie Name - Song Name</string>
+    <string name="home_screen_artist_playlist">Artist Playlist</string>
+    <string name="homeScreen_favourite_playlist">Favourite Playlist</string>
+    <string name="homeScreen_album_playlist">Album Playlist</string>
+    <string name="universal_now_playing">Now Playing</string>
+    <string name="favScreen_favrouite_song">Favrouite Song</string>
+    <string name="arstist">Arstist</string>
+    <string name="album">Album</string>
+</resources>

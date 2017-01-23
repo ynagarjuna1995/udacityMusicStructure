@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_song_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.ynagarjuna1995.udacitymusic.SongDetailActivity">
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layoutmargin_cards"
+        android:elevation="@dimen/layoutmargin_cards"
+        android:id="@+id/image_song_detail_activity">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/songDetailActivity_ImageHegiht"
+                android:src="@drawable/music"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/Screens_textSize"
+                android:gravity="center"
+                android:text="@string/songDetailActivity_tile"/>
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layoutmargin_cards"
+        android:elevation="@dimen/layoutmargin_cards"
+        android:layout_below="@id/image_song_detail_activity"
+        android:id="@+id/exp_song_detail_activity"
+     >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_Size_exp_homeScreen"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="@string/exp_sonDetailScreen"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/layoutmargin_cards"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/exp_song_detail_activity"
+        android:layout_alignStart="@+id/exp_song_detail_activity"
+>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/seekbarHeight"
+                android:padding="@dimen/seekbarPadding"
+                android:id="@+id/seekBar" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/left"/>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/play_song_detail"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/now_play"/>
+                <ImageButton
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.3"
+                    android:src="@drawable/right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

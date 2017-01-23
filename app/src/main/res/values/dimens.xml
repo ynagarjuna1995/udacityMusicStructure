@@ -1,0 +1,12 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="Screens_textSize">30sp</dimen>
+    <dimen name="txt_Size_exp_homeScreen">13sp</dimen>
+    <dimen name="layoutmargin_cards">8dp</dimen>
+    <dimen name="seekbarHeight">20dp</dimen>
+    <dimen name="seekbarPadding">10dp</dimen>
+    <dimen name="songDetailActivity_ImageHegiht">180dp</dimen>
+    <dimen name="homeScreenCards_padding">15dp</dimen>
+</resources>
